@@ -17,12 +17,12 @@ local Mouse = LocalPlayer:GetMouse()
 local CurrentCamera = workspace.CurrentCamera
 
 local Hint = Instance.new("Hint", CoreGui)
-Hint.Text = "Hexagon | Waiting for the game to load..."
+Hint.Text = "Terrority | Waiting for the game to load..."
 
 repeat wait() until game:IsLoaded()
 repeat wait() until LocalPlayer.PlayerGui:FindFirstChild("GUI")
 
-Hint.Text = "Hexagon | Setting up environment..."
+Hint.Text = "Terrority | Setting up environment..."
 
 -- Environment 
 local getrawmetatable = getrawmetatable or false
@@ -39,7 +39,7 @@ if (listfiles == false) then return LocalPlayer:Kick("Exploit not supported! Mis
 if (isfolder == false) then return LocalPlayer:Kick("Exploit not supported! Missing: isfolder.") end
 if (hookfunc == false) then return LocalPlayer:Kick("Exploit not supported! Missing: hookfunc.") end
 
-Hint.Text = "Hexagon | Setting up configuration settings..."
+Hint.Text = "Terrority | Setting up configuration settings..."
 
 if not isfolder("hexagon") then
 	print("creating hexagon folder")
@@ -1545,7 +1545,7 @@ SettingsTabCategoryMain:AddButton("Server Rejoin", function()
 end)
 
 SettingsTabCategoryMain:AddButton("Copy Discord Invite", function()
-	setclipboard("https://discord.gg/FdrQZ6sD5T")
+	setclipboard("https://discord.gg/6xg8fUG8wA")
 end)
 
 SettingsTabCategoryMain:AddButton("Copy Roblox Game Invite", function()
@@ -1663,7 +1663,7 @@ SettingsTabCategoryCredits:AddLabel("")
 
 SettingsTabCategoryCredits:AddLabel("Special Thanks To:")
 
-SettingsTabCategoryCredits:AddLabel("𝖙𝖍𝖊/𝖇𝖊𝖗𝖙𝖔𝖒𝖊𝖝𝖙#0001")
+SettingsTabCategoryCredits:AddLabel("Bertomext xd")
 
 SettingsTabCategoryCredits:AddLabel("FOX-mustafa#5883")
 
@@ -2195,8 +2195,21 @@ if readfile("hexagon/autoload.txt") ~= "" and isfile("hexagon/configs/"..readfil
 	end
 end
 
-print("Hexagon finished loading!")
+print("Terrority finished loading!")
 
-Hint.Text = "Hexagon | Loading finished!"
+Hint.Text = "Terrority | Loading finished!"
 wait(1.5)
 Hint:Destroy()
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
