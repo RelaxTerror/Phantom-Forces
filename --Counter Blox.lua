@@ -1,6 +1,5 @@
-
 --[[
-RelaxTerror
+Made by Pawel12d#0272
 --]]
 
 -- Services
@@ -18,12 +17,12 @@ local Mouse = LocalPlayer:GetMouse()
 local CurrentCamera = workspace.CurrentCamera
 
 local Hint = Instance.new("Hint", CoreGui)
-Hint.Text = "Terrority | Waiting for the game to load..."
+Hint.Text = "Terrority| Waiting for the game to load..."
 
 repeat wait() until game:IsLoaded()
 repeat wait() until LocalPlayer.PlayerGui:FindFirstChild("GUI")
 
-Hint.Text = "Terrority | Setting up environment..."
+Hint.Text = "Terrority| Setting up environment..."
 
 -- Environment 
 local getrawmetatable = getrawmetatable or false
@@ -68,7 +67,7 @@ if not isfile("hexagon/custom_models.txt") then
 elseif readfile("hexagon/custom_models.txt"):find("Clone") then
 	local str = readfile("hexagon/custom_models.txt")
 	writefile("hexagon/custom_models.txt", str)
-	print("exodus winning $$$")
+	print("Terrority winning $$$")
 end
 
 if not isfile("hexagon/inventories.txt") then
@@ -78,7 +77,7 @@ end
 
 if not isfile("hexagon/skyboxes.txt") then
 	print("downloading hexagon skyboxes file")
-	writefile("hexagon/skyboxes.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/skyboxes.txt"))
+	writefile("hexagon/skyboxes.txt", game:HttpGet("https://raw.githubusercontent.com/RelaxTerror/Phantom-Forces/main/skyboxes.txt"))
 end
 
 Hint.Text = "Terrority| Loading..."
@@ -1546,7 +1545,7 @@ SettingsTabCategoryMain:AddButton("Server Rejoin", function()
 end)
 
 SettingsTabCategoryMain:AddButton("Copy Discord Invite", function()
-	setclipboard("https://discord.gg/6xg8fUG8wA")
+	setclipboard("https://discord.gg/FdrQZ6sD5T")
 end)
 
 SettingsTabCategoryMain:AddButton("Copy Roblox Game Invite", function()
@@ -1654,7 +1653,7 @@ end)
 
 local SettingsTabCategoryCredits = SettingsTab:AddCategory("Credits", 2)
 
-SettingsTabCategoryCredits:AddLabel("Script - SadeRelax#2507")
+SettingsTabCategoryCredits:AddLabel("Script - Pawel12d#0272")
 
 SettingsTabCategoryCredits:AddLabel("ESP - Modified Kiriot ESP")
 
@@ -1664,11 +1663,11 @@ SettingsTabCategoryCredits:AddLabel("")
 
 SettingsTabCategoryCredits:AddLabel("Special Thanks To:")
 
-SettingsTabCategoryCredits:AddLabel("Bertomext xd")
+SettingsTabCategoryCredits:AddLabel("ny#2817")
 
-SettingsTabCategoryCredits:AddLabel("FOX-mustafa#5883")
+SettingsTabCategoryCredits:AddLabel("neeX#3712")
 
-SettingsTabCategoryCredits:AddLabel("[HSA]-YigiDou1#7253")
+SettingsTabCategoryCredits:AddLabel("MrPolaczekPL#1884")
 
 SettingsTabCategoryCredits:AddLabel("")
 
@@ -2173,7 +2172,7 @@ end))
 
 getsenv(LocalPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).createNewMessage = function(plr, msg, teamcolor, msgcolor, offset, line)
 	if library.pointers.MiscellaneousTabCategoryMainNNSDontTalk.value == true and plr ~= LocalPlayer.Name then
-		msg = "I am retarded."
+		msg = "Ben malım aptalım."
 	end
 	
 	return createNewMessage(plr, msg, teamcolor, msgcolor, offset, line)
@@ -2201,16 +2200,3 @@ print("Terrority finished loading!")
 Hint.Text = "Terrority | Loading finished!"
 wait(1.5)
 Hint:Destroy()
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
