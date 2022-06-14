@@ -1,3 +1,4 @@
+
 --[[
 RelaxTerror
 --]]
@@ -58,7 +59,7 @@ end
 
 if not isfile("hexagon/custom_skins.txt") then
 	print("downloading hexagon custom skins file")
-	writefile("hexagon/custom_skins.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/custom_skins.txt"))
+	writefile("hexagon/custom_skins.txt", game:HttpGet("https://raw.githubusercontent.com/RelaxTerror/Phantom-Forces/main/custom_skins.txt"))
 end
 
 if not isfile("hexagon/custom_models.txt") then
